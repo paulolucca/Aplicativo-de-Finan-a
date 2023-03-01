@@ -8,6 +8,7 @@ import {
     } from 'react-native';
 
 import { Feather } from '@expo/vector-icons';
+// import { MotiView, MotiText} from 'moti'
 
 const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 22 : 64 ;
 
@@ -15,7 +16,19 @@ export default function Header({name}) {
   return (
 
     <View style={styles.container}>
-      <View style={styles.content}>
+
+      <View 
+      style={styles.content}
+
+     /* from={{
+        translateY: -150,
+        opacity: 0, 
+      }}
+      animate={{
+        translateY: 0,
+        opacity: 1,
+      }}*/
+      >
 
         <Text style={styles.userName}>{name}</Text>
 
